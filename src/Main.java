@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
         java.util.Random random = new java.util.Random();
@@ -16,31 +18,26 @@ public class Main {
         }
         System.out.println("Сумма трат за месяц составила " + s + " рублей");
 // Задание 2
-        int min = 100_000;
-        for (int i = 0; i < arr.length; i++) {
-            if (min >= arr[i]);
-            System.out.println("Минимальная сумма трат за день составила " + arr[i] + " рублей.");
-        }
+        int min = Integer.MAX_VALUE;
+        for (int wastesValueMin : arr) {
+            if (min  > wastesValueMin);{
+            min = wastesValueMin;}}
+            System.out.println("Минимальная сумма трат за день составила " + min +" рублей.");
 
-        System.out.println(" ");
-        int max = 200_000;
-        for (int i = 0; i < arr.length; i++) {
-            if (max <= arr[i]);
-            System.out.println("Максимальная сумма трат за день составила " + arr[i] + " рублей.");
-        }
+        int max = Integer.MIN_VALUE;
+        for (int wastesMaxValue : arr) {
+            if (max < wastesMaxValue);{
+                max = wastesMaxValue;}}
+        System.out.println("Максимальная сумма трат за день составила " + max +" рублей.");
 
-        System.out.println(" ");
-// Задание 3
-        int average = s/ arr.length;
-        System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
+
+        // Задание 3
+                double average = s/arr.length;
+                System.out.println("Средняя сумма трат за месяц составила " + average + "0 рублей");
 // Задание 4
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int d = reverseFullName.length - 1; d >= 0; d--) {
-            System.out.print(reverseFullName[d]);
+                char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+                for (int d = reverseFullName.length - 1; d >= 0; d--) {
+                    System.out.print(reverseFullName[d]);
+                }
             }
         }
-
-    }
-
-
-
