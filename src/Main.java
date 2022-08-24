@@ -20,20 +20,23 @@ public class Main {
 // Задание 2
         int min = Integer.MAX_VALUE;
         for (int wastesValueMin : arr) {
-            if (min  > wastesValueMin);{
+            if (min  > wastesValueMin) {
             min = wastesValueMin;}}
             System.out.println("Минимальная сумма трат за день составила " + min +" рублей.");
 
         int max = Integer.MIN_VALUE;
         for (int wastesMaxValue : arr) {
-            if (max < wastesMaxValue);{
+            if (max < wastesMaxValue) {
                 max = wastesMaxValue;}}
         System.out.println("Максимальная сумма трат за день составила " + max +" рублей.");
 
 
         // Задание 3
-                double average = s/arr.length;
-                System.out.println("Средняя сумма трат за месяц составила " + average + "0 рублей");
+        double average1 = s;
+        double average2 = arr.length;
+        double average = average1/average2;
+        System.out.println("Средняя сумма трат за месяц составила " + average + "0 рублей");
+
 // Задание 4
                 char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
                 for (int d = reverseFullName.length - 1; d >= 0; d--) {
